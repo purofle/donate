@@ -21,9 +21,9 @@ export default function Home() {
                     <p className="text-sm text-gray-300">
                         使用虚拟货币给我打钱捐赠，点击下面的按钮来复制地址。
                     </p>
-                    <div className="mt-4 flex justify-center flex-wrap">
+                    <div className="mt-4 flex justify-center">
                         <button
-                            className="mt-4 bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-md mr-4"
+                            className="shrink min-w-16 w-32 mt-4 bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-md mr-4"
                             onClick={() => {
                                 navigator.clipboard.writeText("TQBAYwveaQZhQPMNGsYWqZDbCda7GuT6iu").then(r => {
                                     makeCopied();
@@ -31,15 +31,14 @@ export default function Home() {
                             }
                             }>Tether
                         </button>
-                        <button className="mt-4 bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-md mr-4"
+                        <button className="shrink min-w-16 w-32 mt-4 bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-md mr-4"
                                 onClick={() => {
                                     navigator.clipboard.writeText("0x6607A11C4Be2E99cA42FbEdFCAE8F295523aC80e").then(r => {
                                         makeCopied();
                                     })
-                                }}>EVM
-                            Chain(BSC,ETH)
+                                }}>BSC, ETH
                         </button>
-                        <button className="mt-4 bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-md"
+                        <button className="shrink min-w-16 w-32 mt-4 bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-md"
                                 onClick={() => {
                                     navigator.clipboard.writeText("DH3zGJQTm4yqDujKTSsCxiQgTSMqLoKsQki1mjsuV3tS").then(r => {
                                         makeCopied();
